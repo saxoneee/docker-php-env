@@ -6,7 +6,8 @@ RUN apt-get install software-properties-common -y
 RUN add-apt-repository ppa:ondrej/php -y
 RUN apt-get install -y \ 
     apache2 \
-    php7.4
+    php7.4 \
+    vim
 
 EXPOSE 80 
 EXPOSE 443

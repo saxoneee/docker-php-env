@@ -1,0 +1,12 @@
+version: "2"
+
+name: project-foo
+services:
+  php:
+    build: ./docker/php-server
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "./src:/var/www/html"
+      - "./docker/php-server/cfg:/home/cfg"
